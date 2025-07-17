@@ -1,0 +1,74 @@
+html {
+  background-color: rgb(33, 33, 33);
+  color: #eee;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  background: rgb(40, 40, 40);
+  margin: 1em auto;
+  padding: 1em 2em;
+  max-width: 800px;
+  border-radius: 6px;
+  transition: transform 0.2s ease;;
+}
+
+section:hover {
+    transform: scale(1.01);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1, h2 {
+  color: #fafafa;
+}
+
+button {
+    background-color: rgb(27, 27, 27);
+    padding: 1em 2em;
+    max-width: 200px;
+    max-height: 100px;
+    border-radius: 6px;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    border-style: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(60, 60, 60);
+    transform: scale(1.05);
+}
+
+.mod
+{
+    background: rgb(23, 23, 23);
+    margin: 1em auto;
+    padding: 1em 2em;
+    max-width: 200px;
+    border-radius: 6px;
+    margin: 1em auto;
+    align-items: normal;
+    border-radius: 8px;
+    padding: 1em;
+    margin-top: 1em;
+    color: white;
+    width: fit-content;
+    transition: transform 0.2s ease;
+}
+
+.mod:hover {
+    transform: scale(1.01);
+}
+
+.mod img {
+    display: block;
+    margin-bottom: 0.5em;
+    border-radius: 4px;
+}

@@ -1,3 +1,45 @@
 <!DOCTYPE html>
-<h1>Hello, world!</h1>
-<p>Website is under construction!</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brainy Engine Hub</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="scripts/supabase.js"></script>
+    <section>
+        <h1 id="home">Brainy Engine</h1>
+        <p>Brainy Engine is an fork of Psych Engine with an emphasis on making modpacks more like source mods.</p>
+        <button height=34  onclick="uploadFile()" style="align:center;">Upload a mod</button><br><br><br>
+        <button height=34 onclick="window.open('https://github.com/Brainfunk-Team/FNF-BrainyEngine')"><img width=32 src="images/github.png "><p>Github Page</p></button>
+    </section>
+
+    <section id="featured">
+        <div class="featured">
+            <h2>Featured Modpacks</h2>
+            <div class="mod">
+                <img width = 200px src="images/moddefault.png">
+                <p>Example | 0 likes | 0 downloads</p>
+                <p>Uses version 0.1.0</p>
+                <a href="index.html">View mod</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular">
+        <div class="popular">
+            <h2>Popular Modpacks</h2>
+            <p>No mods available!</p>
+        </div>
+    </section>
+
+    <section id="recent">
+        <div class="recent">
+            <h2>Recent Modpacks</h2>
+            <p>No mods available!</p>
+        </div>
+    </section>
+</body>
+</html>
