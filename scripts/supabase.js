@@ -1,7 +1,8 @@
+import { ANON_KEY } from './config.js';
 
 const supabase = supabase.createClient(
     'https://caioubsndvyjupkzmnok.supabase.co', // replace with your project URL
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhaW91YnNuZHZ5anVwa3ptbm9rIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI3OTYyNDcsImV4cCI6MjA2ODM3MjI0N30.M2OPg5izenO27Ff_a7RnegT_FW_KyNDAPb69-FIQkdQ'
+    ANON_KEY
 );
 
 async function uploadFile() {
