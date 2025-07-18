@@ -1,0 +1,22 @@
+name: Deploy Brainy Engine Hub
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Use ANON_KEY secret
+        run: |
+          echo "Using the ANON_KEY secret without leaking it"
+          # Example: echo secret length (do NOT print the secret itself)
+          echo "Secret length is ${#ANON_KEY} characters"
+        env:
+          ANON_KEY: ${{ secrets.ANON_KEY }}
