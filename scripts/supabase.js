@@ -1,9 +1,8 @@
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 import { ANON_KEY } from './config.js';
+const supabaseUrl = "https://caioubsndvyjupkzmnok.supabase.co";
 
-const supabase = supabase.createClient(
-    'https://caioubsndvyjupkzmnok.supabase.co', // replace with your project URL
-    ANON_KEY
-);
+const supabase = createClient(supabaseUrl, ANON_KEY);
 
 async function uploadFile() {
     const fileInput = document.getElementById('fileInput');
